@@ -63,6 +63,7 @@ for page_start in range(0, 100, 20):
     # 解码转成html数据
     result = response.json()  # json.loads(html)
 
+    # print(result)
     if len(result["subjects"]) == 0:
         break
 
