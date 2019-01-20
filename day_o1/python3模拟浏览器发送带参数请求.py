@@ -34,7 +34,7 @@ response = urllib.request.urlopen(request)
 content = response.read()
 # 获取字符串
 html = content.decode('utf-8')
-print(html)
+# print(html)
 # 3. 处理响应内容
-with open('02.html','wb') as f:
-    f.write(response.read())
+with open('02.html', 'wb') as f:
+    f.write(content)
